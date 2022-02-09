@@ -2,4 +2,113 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    align-items: center;
+  }
+}
+
+.logo {
+  transition: all 0.3s;
+  padding-top: 2px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-right: 18px;
+  }
+
+  &__item {
+    margin-right: 45px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.2;
+    transition: all 0.3s;
+  }
+
+  &__link:hover {
+    color: $orange-900;
+  }
+
+  &__link:focus {
+    outline: 2px solid rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+  }
+
+  &__link:active {
+    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+  }
+
+  &__link--active {
+    color: $orange-900;
+  }
+
+  &__icon-nav {
+    display: flex;
+  }
+
+  &__icon-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 19px auto;
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  // &__icon-link:hover {
+  //   color: $orange-900;
+  // }
+
+  &__icon-link:focus {
+    outline: 2px solid rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+    background-color: rgba(255, 122, 80, 0.1);
+  }
+
+  &__icon-link:active {
+    background-color: rgba(255, 122, 80, 0.1);
+    border-radius: 5px;
+  }
+
+  &__icon-num {
+    position: absolute;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+    width: 14px;
+    height: 14px;
+    top: 8px;
+    right: 4px;
+    border-radius: 50%;
+    background-color: $orange-900;
+  }
+}
+
 @import 'media';

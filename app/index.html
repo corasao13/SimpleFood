@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SmileFood - доставка еды</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Блюда</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="menu__icon-nav">
+            <a class="menu__icon-link menu__icon-link--search" style="background-image: url('images/search.svg');"
+              href="#">
+            </a>
+            <a class="menu__icon-link menu__icon-link--cart" style="background-image: url('images/cart.svg');" href="#">
+              <span class="menu__icon-num">4</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
