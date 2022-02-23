@@ -3,15 +3,6 @@
 @import 'reset';
 @import 'global';
 
-.header {
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 0;
-    align-items: center;
-  }
-}
-
 .logo {
   transition: all 0.3s;
   padding-top: 2px;
@@ -32,11 +23,14 @@
 
 .menu {
   display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
   align-items: center;
 
   &__list {
     display: flex;
     margin-right: 18px;
+    margin-left: auto;
   }
 
   &__item {
@@ -79,6 +73,11 @@
     position: relative;
     transition: all 0.3s;
 
+    path,
+    ellipse {
+      transition: all 0.3s;
+    }
+
     &:hover {
 
       background-color: #FF7A50;
@@ -87,6 +86,11 @@
       path,
       ellipse {
         stroke: #ffffff;
+      }
+
+      .menu__icon-num {
+        color: #FF7A50;
+        background-color: #ffffff
       }
     }
 
@@ -114,11 +118,7 @@
     right: 4px;
     border-radius: 50%;
     background-color: $orange-900;
-
-    &:hover {
-      color: #FF7A50;
-      background-color: #ffffff
-    }
+    transition: all 0.3s;
   }
 }
 
@@ -213,7 +213,7 @@
     color: #ffffff;
     background-color: $orange-900;
     outline: 2px solid $orange-900;
-  
+
     path {
       fill: #ffffff;
     }

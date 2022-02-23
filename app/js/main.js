@@ -1,8 +1,11 @@
 $(function () {
 
   var mixer = mixitup('.food', {
+    load: {
+      filter: '.burger'
+    },
     animation: {
-      duration: 200
+      enable: false,
     }
   });
 
